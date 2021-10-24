@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Equipo Corvus</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Call of Duty Warzone - Equipo Corvus</h1>
+            <p id="description" class="description text-center">
+                Formulario para equipo profesional de Call of Duty Warzone
+            </p>
+        </header>
+
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre" required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Correo Electrónico</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu correo electrónico" required />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Edad<span class="clue">(+18)</span></label>
+                <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Edad" />
+            </div>
+
+            <div class="form-group">
+                <p>¿Cuál de estas rol te gustaría ocupar?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Selecciona un rol</option>
+                    <option value="soldado">Soldado</option>
+                    <option value="francotirador">Francotirador</option>
+                    <option value="medico">Médico</option>
+                    <option value="smg">SMG</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <p>¿Recomendarías el equipo Corvus a un amigo?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Definitivamente</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Quizás</label>
+    
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />No estoy seguro</label>
+            </div>
+    
+            <div class="form-group">
+                <p>
+                    ¿Cuál es tu modo de juego favorito del juego?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Selecciona una opción</option>
+                    <option value="challenges">Battle Royale</option>
+                    <option value="projects">Saqueo</option>
+                    <option value="community">Isla de Renacimiento</option>
+                    <option value="openSource">Guerra Terrestre</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <p>
+                    ¿Cuáles son tus armas favoritas del juego?
+                </p>
+    
+                <label><input name="prefer" value="ak-47" type="checkbox" class="input-checkbox" />AK-47</label>
+                <label><input name="prefer" value="m16a1" type="checkbox" class="input-checkbox" />M16A1</label>
+                <label><input name="prefer" value="aug" type="checkbox" class="input-checkbox" />AUG</label>
+                <label><input name="prefer" value="scar-h" type="checkbox" class="input-checkbox" />Scar-H</label>
+                <label><input name="prefer" value="uzi" type="checkbox" class="input-checkbox" />Uzi</label>
+                <label><input name="prefer" value="rpg" type="checkbox" class="input-checkbox" />RPG</label>
+                <label><input name="prefer" value="ots" type="checkbox" class="input-checkbox" />OTS</label>
+                <label><input name="prefer" value="ram-7" type="checkbox" class="input-checkbox" />RAM-7</label>
+            </div>
+    
+            <div class="form-group">
+                <p>¿Tienes algún comentario o sugerencia</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Escribe tu comentario aquí"></textarea>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
